@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "images": "/male.jpg",
+    "fullName": "Ahmet Yılmaz",
+    "title": "Frontend Developer",
+    "email": "ahmet.yilmaz@gmail.com",
+    "address": "İstanbul",
+    "phone": "+1234567890",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "url":"ahmet-yilmaz"
+  },
+  {
+    "id": 2,
+    "images": "/female.jpg",
+    "fullName": "Deniz Arslan",
+    "title": "Product Manager",
+    "email": "deniz.arslan@gmail.com",
+    "address": "Samsun",
+    "phone": "+2222222222",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "url": "deniz-arslan"
+  },
+  {
+    "id": 3,
+    "images": "/female.jpg",
+    "fullName": "Ayşe Demir",
+    "title": "UI/UX Designer",
+    "email": "ayse.demir@gmail.com",
+    "address": "İzmir",
+    "phone": "+5555555555",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+    "url":"ayse-demir"
+  },
+  {
+    "id": 4,
+    "images": "/male.jpg",
+    "fullName": "Ali Can",
+    "title": "Software Engineer",
+    "email": "ali.can@gmail.com",
+    "address": "Bursa",
+    "phone": "+9999999999",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "url": "ali-can"
+  },
+  {
+    "id": 5,
+    "images": "/male.jpg",
+    "fullName": "Ahmet Yıldırım",
+    "title": "Frontend Developer",
+    "email": "ahmet.yildirim@gmail.com",
+    "address": "Antalya",
+    "phone": "+7777777777",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "url": "ahmet-yildirim"
+  },
+  {
+    "id": 6,
+    "images": "/female.jpg",
+    "fullName": "Fatma Tekin",
+    "title": "Graphic Designer",
+    "email": "fatma.tekin@gmail.com",
+    "address": "Adana",
+    "phone": "+8888888888",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "url": "fatma-tekin"
+  }
+]

@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+$reset-elements: a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, div;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@each $element in $reset-elements {
+  #{$element} {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+  }
+}
+
+$block-elements: article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section;
+
+@each $element in $block-elements {
+  #{$element} {
+    display: block;
+  }
+}
+
+$list-elements: ol, ul;
+
+@each $element in $list-elements {
+  #{$element} {
+    list-style: none;
+  }
+}
+
+$quote-elements: blockquote, q;
+
+@each $element in $quote-elements {
+  #{$element} {
+    quotes: none;
+    &:after, &:before {
+      content: '';
+      content: none;
+    }
+  }
+}
+
+html { font-family: 'Poppins', sans-serif; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button { user-select: none; border: none; }
+a { text-decoration: auto; }
+.container { width: $container; max-width: 95% ;margin: auto; }
