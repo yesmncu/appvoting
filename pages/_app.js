@@ -2,13 +2,13 @@ import '../src/app/style/globals.scss'
 import '../src/app/style/layout.scss';
 import Header from '../src/app/components/Header';
 
-const RootLayout = ({ children }) => {
+const MyApp = ({ Component, pageProps }) => {
   return (
-    <>
+    <div>
       <Header />
-      {children}
-    </>
-  )
+      <Component {...pageProps} />
+    </div>
+  );
 }
 
-export default RootLayout;
+export default MyApp;
