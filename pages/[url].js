@@ -1,14 +1,17 @@
 import { useRouter } from "next/router";
 import DetailPage from "./detail";
-import jsonData from "../api/personal.json";
+import { useAppContext } from '../context/context';
 
 
 const DynamicContent = () => {
+
+  const { data } = useAppContext();
+
   const router = useRouter();
   const { url } = router.query;
-  const data = jsonData.find(item => item.url === url);
+  const item = data.find(item => item.url === url);
 
-  return <DetailPage data={data} />;
+  return <DetailPage data={item} />;
 }
 
 export default DynamicContent;

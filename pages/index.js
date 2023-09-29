@@ -1,9 +1,13 @@
 import Head from "next/head";
 import Card from '../src/app/components/Card';
-import jsonData from "../api/personal.json";
+
+import { useAppContext } from '../context/context';
+
 
 const HomePage = () => {
-  const data = jsonData;
+
+  const { data } = useAppContext();
+
   return (
     <>
       <Head>
@@ -15,5 +19,6 @@ const HomePage = () => {
     </>
   );
 }
+
 
 export default HomePage;
