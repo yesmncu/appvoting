@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Card from '../src/app/components/Card';
+import Card from '../src/components/Card';
 
 import { useAppContext } from '../context/context';
 

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import CardDetail from '../src/app/components/CardDetail';
+import CardDetail from '../src/components/CardDetail';
 
 const DetailPage = ({ data }) => {
   return (
