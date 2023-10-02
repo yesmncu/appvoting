@@ -237,3 +237,47 @@
     }
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 110px;
+  }
+  .page-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card {
+    &__item {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &__body {
+      width: 100%;
+    }
+  }
+
+  .btn-default {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .cardDetail {
+    flex-direction: column;
+
+    &__body {
+      width: 100%;
+
+      &--info {
+        flex-direction: column;
+
+        > a {
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
