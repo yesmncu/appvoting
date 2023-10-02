@@ -1,7 +1,7 @@
 import { AppProvider } from '../context/context';
-import '../src/app/style/globals.scss'
-import '../src/app/style/layout.scss';
-import Header from '../src/app/components/Header';
+import '../src/style/globals.scss'
+import '../src/style/layout.scss';
+import Header from '../src/components/Header';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
