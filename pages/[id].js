@@ -8,8 +8,8 @@ const DynamicContent = () => {
   const { data } = useAppContext();
 
   const router = useRouter();
-  const { url } = router.query;
-  const item = data.find(item => item.url === url);
+  const { id } = router.query;
+  const item = data.find(item => item.id === id);
 
   return <DetailPage data={item} />;
 }

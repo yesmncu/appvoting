@@ -4,15 +4,15 @@ import { useState } from 'react';
 
 const Card = ({ data }) => {
 
-  const [votes, setVotes] = useState(data.map(() => 0));
+  const [votes, setVotes] = useState({});
 
   const voteClick = (index) => {
-    const newVotes = [...votes];
-    newVotes[index]++;
+    const newVotes = { ...votes };
+    newVotes[index] = (newVotes[index] || 0) + 1;
     setVotes(newVotes);
   };
 
-  const sortedData = [...data].sort((a, b) => votes[data.indexOf(b)] - votes[data.indexOf(a)]);
+  const sortedData = [...data].sort((a, b) => (votes[data.indexOf(b)] || 0) - (votes[data.indexOf(a)] || 0));
 
   return (
     <div className='card'>
@@ -25,13 +25,13 @@ const Card = ({ data }) => {
             <div className='card__item--info'>
               <strong>{item.fullName}</strong>
               <span>{item.title}</span>
-              <Link href={item.url} className='detail-btn'>
+              <Link href={item.id} className='detail-btn'>
                 Detay
               </Link>
             </div>
           </div>
           <button className='btn-default' onClick={() => voteClick(data.indexOf(item))}>
-            OY VER ({votes[data.indexOf(item)]})
+            OY VER ({votes[data.indexOf(item)] || 0})
           </button>
         </div>
       ))}
