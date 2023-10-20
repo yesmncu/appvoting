@@ -1,4 +1,4 @@
-const API_URL = 'https://6527f3b1931d71583df1a378.mockapi.io';
+const API_URL = process.env.API_URL;
 
 const contentApi = async () => {
   try {
